@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:wght@800&display=swap');
+
+*{
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+   font-family: 'Bungee Spice', sans-serif;
+font-family: 'Playfair Display', serif;}
+body{
+    background-color: #252525;
+}
+
+#particle{
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 65%;
+      z-index: 2;
+    
+}
+
+.container{
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin:5px;
+    margin-top:20px;
+}
+
+.container h1{
+    margin-top:-5px;
+    font-size:50px;
+    text-align:center;
+    color: #FFFFFF;
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+color: #FFFFFF;
+
+
+}
+
+.header{
+    padding-bottom: 20px;
+}
+
+#add{
+    padding: 10px;
+    width:80%;
+    margin-left:30px;
+}
+.form label button{
+    padding:10px;
+    width:70px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.list{
+    padding-bottom: 20px;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list-div .list li .list-text{
+    padding: 10px;
+    width:60%;
+    margin-left:60px;
+} 
+.edit,.delete{
+    padding:10px;
+    width:70px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+@media (max-width:636px){
+    .form label button{
+        padding:10px;
+        width:70px;
+        margin:3% 40%;
+        cursor: pointer;
+    }
+    .edit,.delete{
+        padding:10px;
+        width:70px;
+        margin:2% 38%;
+        cursor: pointer;
+    }
+    }
+
+    @media (max-width:280px){
+        *{
+            box-sizing: inherit;
+        }
+        .form{
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+        }
+        #add{
+    
+            width:100%;
+            margin:0;
+        }
+        #addBtn{
+            margin:0;
+            gap:5px;
+        }
+        .form label button{
+            padding:10px;
+            width:70px;
+            margin:3% 40%;
+            cursor: pointer;
+        }
+        .edit,.delete{
+            padding:10px;
+            width:70px;
+            margin:2% 38%;
+            cursor: pointer;
+        }
+        }
